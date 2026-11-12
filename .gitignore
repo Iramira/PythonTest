@@ -12,3 +12,6 @@ venv/
 # OS
 Thumbs.db
 .DS_Store
+
+# Рабочие базы приложения tasks
+tasks_store/
