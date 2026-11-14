@@ -1,0 +1,20 @@
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.cwd": "${workspaceFolder}",
+    "python.testing.pytestArgs": [
+        "-c",
+        "Day_3/django_project/pytest.ini",
+        "Day_3/pytest_materials/Lection2",
+        "Day_3/pytest_materials/fixtures_practice",
+        "Day_3/django_project/tests"
+        
+    ]
+}

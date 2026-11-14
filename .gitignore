@@ -6,6 +6,24 @@ __pycache__/
 venv/
 .venv/
 
+# Кэш Python и pytest
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Отчёты о покрытии
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Локальная база данных Django
+db.sqlite3
+db.sqlite3-journal
+
+# Локальные секреты
+.env
+
 # IDE
 .idea/
 
