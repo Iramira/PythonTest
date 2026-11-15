@@ -20,7 +20,7 @@ def create_app(app_config=None):
         app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URI
 
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-    app.config["SQLALCHEMY_ECHO"] = True  # Показывать SQL-запросы в терминале. # False  # To see raw SQL
+    app.config["SQLALCHEMY_ECHO"] = False  # To see raw SQL # True # Показывать SQL-запросы в терминале. 
 
     db.init_app(app)
 
