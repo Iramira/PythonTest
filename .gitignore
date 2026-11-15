@@ -23,6 +23,8 @@ db.sqlite3-journal
 
 # Локальные секреты
 .env
+.envrc
+*env/
 
 # IDE
 .idea/
