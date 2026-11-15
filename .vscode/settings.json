@@ -8,13 +8,18 @@
     ],
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
-    "python.testing.cwd": "${workspaceFolder}",
+    // Старый рабочий каталог для Day_3:
+    //"python.testing.cwd": "${workspaceFolder}",
+    // Текущий рабочий каталог для Flask, Day_4:
+    //"python.testing.cwd": "${workspaceFolder}/Day_4/flask_user_management",
+    // Текущий проект, Day_5:
+    "python.testing.cwd": "${workspaceFolder}/Day_5/app_example",
     "python.testing.pytestArgs": [
-        "-c",
-        "Day_3/django_project/pytest.ini",
-        "Day_3/pytest_materials/Lection2",
-        "Day_3/pytest_materials/fixtures_practice",
-        "Day_3/django_project/tests"
-        
+        //"-c",
+        //"Day_3/django_project/pytest.ini",
+        //"Day_3/pytest_materials/Lection2",
+        //"Day_3/pytest_materials/fixtures_practice",
+        //"Day_3/django_project/tests"
+        "."
     ]
 }
