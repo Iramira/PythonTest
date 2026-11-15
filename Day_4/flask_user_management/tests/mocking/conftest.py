@@ -10,7 +10,7 @@ def app():
         "TESTING": True,
         # Для подготовки приложения используем SQLite в памяти.
         # Операции add и commit подменяются моками в самом тесте.
-        # "SQLALCHEMY_DATABASE_URI": "postgresql://user:password@host/dummy_db", # Dummy database URL
+        # "SQLALCHEMY_DATABASE_URI": "postgresql://user:password@host/dummy_db", # Dummy database URL - эту строку оставить, когда будем мОкать
         "SQLALCHEMY_DATABASE_URI": "sqlite:///:memory:",
         "SQLALCHEMY_TRACK_MODIFICATIONS": False,
     }

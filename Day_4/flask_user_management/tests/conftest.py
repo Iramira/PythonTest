@@ -8,11 +8,12 @@ from models import db
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--dburl", # For Postgres use "postgresql://user:password@host/dbname"
+        "--dburl",  # For Postgres use "postgresql://user:password@host/dbname"
         action="store",
-        default="sqlite:///:memory:", # Default use SQLite in-memory database,
+        default="sqlite:///:memory:",  # Default use SQLite in-memory database,
         help="Database URL use to tests",
     )
+
 
 @pytest.fixture(scope="session")
 def db_url(request):
@@ -29,12 +30,13 @@ def pytest_sessionstart(session):
             poolclass=StaticPool,
         )
         connection = engine.connect()
-        connection.close() # Clone the connection right after a successfull connect
+        connection.close()  # Clone the connection right after a successfull connect
         print("Using Database URL", db_url)
         print("Database connection successful ...")
     except SQLAlchemyOperationalError as e:
         print(f"Failed to connect to the database at {db_url}: {e}")
-        pytest.exit(reason="Stopping tests because database connection could not be established")
+        pytest.exit(
+            reason="Stopping tests because database connection could not be established")
 
 
 @pytest.fixture(scope="session")
@@ -68,3 +70,5 @@ def user_payload():
         "username": f"user_{suffix}",
         "email": f"user_{suffix}@mail.com",
     }
+
+# Закоммитить этот conftest.pyкогда будем мОкать
