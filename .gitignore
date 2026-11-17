@@ -38,3 +38,6 @@ tasks_store/
 
 # Локальная база учебного приложения
 store.db
+
+# debug
+debug/
